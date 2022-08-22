@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <title>Video Games Survey</title>
+  </head>
+  <body>
+    <header>
+    <h1 id="title">Video Games Survey</h1>
+    <p class="consoles" id="description">PS5, XBOX Series X or PC?</p></header>
+    <form id="survey-form">
+      <fieldset>
+          <div>
+            <label id="name-label" for="name">Enter your name: <input  placeholder="Your Name" id="name" required type="text"
+          </label>
+          </div>
+          <div>
+            <label id="email-label" for="email">Enter your email: <input placeholder="Email" required id="email" type="email"
+          </label>
+          </div>
+          <div>
+            <label id="number-label" for="number">Enter your age: <input placeholder="Age" min="16" max="100" id="number" required type="number"
+          </label>
+          </div>
+          <div>
+             <p>Your favourite game type: </p>
+            <select id="dropdown" required>
+          
+             <option value="">(Choose one)</option>
+             <option value="1"> Action</option>
+             <option value="2"> Sport</option>
+             <option value="3"> FPS</option>
+             <option value="4"> RTS</option>
+             <option value="5"> RPG</option>
+
+            </select>
+          </div>
+         </fieldset>
+          
+          <fieldset>
+            <div>
+              <p>Your gender:
+              <label><input value="male" class="inline" type="radio" name="sex">Male</label>
+
+              </label>
+              
+              <label><input value="female" class="inline" type="radio" name="sex">Female</label>
+
+              </label>
+            </div>
+          </fieldset>
+          <fieldset>
+      <div>
+              <p>Tick if you ever played on a platform:</p>
+              <label><input value="PS2" type="checkbox">Playstation 2</label>
+              <label><input value="gamecube" type="checkbox">Gamecube</label>
+              <label><input value="Xbox-360" type="checkbox">Xbox 360</label>
+              <label><input value="Dreamcast" type="checkbox">Dreamcast</label>
+              <label><input value="Atari-XL" type="checkbox">Atari XL</label>
+      </div>
+      </fieldset>
+      <fieldset>
+        <div>
+          <p>Describe your perfect game:</p>
+          <label><textarea placeholder="Enter your description here..." id="comments" type="textarea"></textarea></label>
+        </div>
+      </fieldset>
+      <input id="submit" value="Submit" type="submit">
+  </body>
+  <footer>
+   <p class="reserved"> All <a href= "https://www.freecodecamp.org/">Rights</a> Reserved
+  </footer>
+</html>
